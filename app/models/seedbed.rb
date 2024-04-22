@@ -1,0 +1,2 @@
+class Seedbed < ApplicationRecord
+end

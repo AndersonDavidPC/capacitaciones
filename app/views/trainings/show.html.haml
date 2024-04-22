@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @training.name
+%p
+  %b Description:
+  = @training.description
+%p
+  %b Start date enrollment:
+  = @training.start_date_enrollment
+%p
+  %b End date enrollment:
+  = @training.end_date_enrollment
+%p
+  %b Start training date:
+  = @training.start_training_date
+%p
+  %b End training date:
+  = @training.end_training_date
+%p
+  %b Seedbed:
+  = @training.seedbed
+
+= link_to 'Edit', edit_training_path(@training)
+\|
+= link_to 'Back', trainings_path

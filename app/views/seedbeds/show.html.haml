@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @seedbed.name
+%p
+  %b Acronym:
+  = @seedbed.acronym
+%p
+  %b Research group:
+  = @seedbed.research_group
+%p
+  %b Research area:
+  = @seedbed.research_area
+
+= link_to 'Edit', edit_seedbed_path(@seedbed)
+\|
+= link_to 'Back', seedbeds_path

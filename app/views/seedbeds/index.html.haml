@@ -1,0 +1,27 @@
+%h1 Listing seedbeds
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Acronym
+      %th Research group
+      %th Research area
+      %th
+      %th
+      %th
+
+  %tbody
+    - @seedbeds.each do |seedbed|
+      %tr
+        %td= seedbed.name
+        %td= seedbed.acronym
+        %td= seedbed.research_group
+        %td= seedbed.research_area
+        %td= link_to 'Show', seedbed
+        %td= link_to 'Edit', edit_seedbed_path(seedbed)
+        %td= link_to 'Destroy', seedbed, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Seedbed', new_seedbed_path
