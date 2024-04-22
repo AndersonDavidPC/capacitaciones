@@ -12,4 +12,7 @@
 #
 class Seedbed < ApplicationRecord
   has_many :trainings
+
+  validates :name, :acronym, :research_group, :research_area, presence: true
+  validates :name, :acronym, uniqueness: { case_sensitive: false}
 end

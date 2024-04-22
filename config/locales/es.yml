@@ -76,3 +76,9 @@ es:
     destry: "Eliminar"
     show: "Ver"
     are_you_sure: "¿Estás seguro?"
+  training:
+    errors:
+      start_date_enrollment_invalidity: "La fecha de inicio de inscripciones no puede ser pasada"
+      end_date_enrollment_invalidity: "La fecha de finalización de inscripciones no puede ser menor a la fecha de inicio de inscripciones"
+      start_training_date_invalidity: "La fecha de inicio de la capacitación debe ser mayor a la fecha de finalización de inscripciones"
+      end_training_date_invalidity: "La fecha de finalización de la capacitación debe ser mayor a la fecha de inicio de la capacitación"
