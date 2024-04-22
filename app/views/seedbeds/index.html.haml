@@ -1,12 +1,12 @@
-%h1 Listing seedbeds
+%h1= t('seedbeds.listing_seedbeds')
 
 %table
   %thead
     %tr
-      %th Name
-      %th Acronym
-      %th Research group
-      %th Research area
+      %th= t('seedbeds.name')
+      %th= t('seedbeds.acronym')
+      %th= t('seedbeds.research_group')
+      %th= t('seedbeds.research_area')
       %th
       %th
       %th
@@ -18,10 +18,10 @@
         %td= seedbed.acronym
         %td= seedbed.research_group
         %td= seedbed.research_area
-        %td= link_to 'Show', seedbed
-        %td= link_to 'Edit', edit_seedbed_path(seedbed)
-        %td= link_to 'Destroy', seedbed, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t('common.show'), seedbed
+        %td= link_to t('common.edit'), edit_seedbed_path(seedbed)
+        %td= link_to t('common.destroy'), seedbed, :method => :delete, :data => { :confirm => t('common.are_you_sure') }
 
 %br
 
-= link_to 'New Seedbed', new_seedbed_path
+= link_to t('seedbeds.new_seedbed'), new_seedbed_path

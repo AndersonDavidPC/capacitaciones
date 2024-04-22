@@ -1,18 +1,18 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b= t('seedbeds.name'):
   = @seedbed.name
 %p
-  %b Acronym:
+  %b= t('seedbeds.acronym'):
   = @seedbed.acronym
 %p
-  %b Research group:
+  %b= t('seedbeds.research_group'):
   = @seedbed.research_group
 %p
-  %b Research area:
+  %b= t('seedbeds.research_area'):
   = @seedbed.research_area
 
-= link_to 'Edit', edit_seedbed_path(@seedbed)
+= link_to t('common.edit') edit_seedbed_path(@seedbed)
 \|
-= link_to 'Back', seedbeds_path
+= link_to t('common.destroy'), seedbeds_path

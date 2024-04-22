@@ -1,7 +1,7 @@
-%h1 Editing seedbed
+%h1= t('seedbeds.editing_seedbed')
 
 = render 'form'
 
-= link_to 'Show', @seedbed
+= link_to t('common.show'), @seedbed
 \|
-= link_to 'Back', seedbeds_path
+= link_to t('common.back'), seedbeds_path

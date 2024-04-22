@@ -4,13 +4,13 @@
   = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
 
   .form-inputs
-    = f.input :name
-    = f.input :description
-    = f.input :start_date_enrollment
-    = f.input :end_date_enrollment
-    = f.input :start_training_date
-    = f.input :end_training_date
-    = f.association :seedbed
+    = f.input :name, label: t('.name')
+    = f.input :description, label: t('.description')
+    = f.input :start_date_enrollment, label: t('.start_date_enrollment')
+    = f.input :end_date_enrollment, label: t('.end_date_enrollment')
+    = f.input :start_training_date, label: t('.start_training_date')
+    = f.input :end_training_date, label: t('.end_training_date')
+    = f.association :seedbed, label: t('.seedbed')
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, label: t('.submit')

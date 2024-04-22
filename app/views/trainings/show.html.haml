@@ -1,27 +1,27 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b= t('trainings.name'):
   = @training.name
 %p
-  %b Description:
+  %b= t('trainings.description'):
   = @training.description
 %p
-  %b Start date enrollment:
+  %b= t('trainings.start_date_enrollment'):
   = @training.start_date_enrollment
 %p
-  %b End date enrollment:
+  %b= t('trainings.end_date_enrollment'):
   = @training.end_date_enrollment
 %p
-  %b Start training date:
+  %b= t('trainings.start_training_date'):
   = @training.start_training_date
 %p
-  %b End training date:
+  %b= t('trainings.end_training_date'):
   = @training.end_training_date
 %p
-  %b Seedbed:
+  %b= t('trainings.seedbed'):
   = @training.seedbed
 
-= link_to 'Edit', edit_training_path(@training)
+= link_to ('common.edit'), edit_training_path(@training)
 \|
-= link_to 'Back', trainings_path
+= link_to ('common.back'), trainings_path

@@ -4,10 +4,10 @@
   = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
 
   .form-inputs
-    = f.input :name
-    = f.input :acronym
-    = f.input :research_group
-    = f.input :research_area
+    = f.input :name, label: t('.name')
+    = f.input :acronym, label: t('.acronym')
+    = f.input :research_group, label: t('.research_group')
+    = f.input :research_area, label: t('.research_area')
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, label: t('.submit') 

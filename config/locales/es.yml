@@ -1,0 +1,78 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+es:
+  hello: "Hola mundo"
+  seedbeds:
+    form:
+      name: "Nombre"
+      acronym: "Sigla"
+      research_group: "Grupo de investigación"
+      research_area: "Área de investigación"
+    new_seedbed: "Nuevo semillero"
+    editing_seedbed: "Editar semillero"
+    listing_seedbeds: "Listado de semilleros"
+    name: "Nombre"
+    acronym: "Sigla"
+    research_group: "Grupo de investigación"
+    research_area: "Área de investigación"
+  activerecord:
+    models:
+      seedbed: 
+        one: "semillero"
+        other: "semilleros"
+      training:
+        one: "capacitación"
+        other: "capacitaciones"
+  trainings:
+    form:
+      name: "Nombre"
+      description: "Descripción"
+      start_date_enrollment: "Fecha de inicio de inscripciones"
+      end_date_enrollment: "Fecha de finalización de inscripciones"
+      start_training_date: "Fecha de inicio de la capacitación"
+      end_training_date: "Fecha de finalización de la capacitación"
+      seedbed: "Semillero"
+    new_training: "Nueva capacitación"
+    editing_training: "Editar capacitación"
+    listing_trainings: "Listado de capacitaciones"
+    name: "Nombre"
+    description: "Descripción"
+    start_date_enrollment: "Fecha de inicio de inscripciones"
+    end_date_enrollment: "Fecha de finalización de inscripciones"
+    start_training_date: "Fecha de inicio de la capacitación"
+    end_training_date: "Fecha de finalización de la capacitación"
+    seedbed: "Semillero"
+  common:
+    back: "Volver"
+    submit: "Enviar"
+    edit: "Editar"
+    destry: "Eliminar"
+    show: "Ver"
+    are_you_sure: "¿Estás seguro?"

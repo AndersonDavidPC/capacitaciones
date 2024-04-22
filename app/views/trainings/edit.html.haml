@@ -1,7 +1,7 @@
-%h1 Editing training
+%h1= t('trainings.editing_training')
 
 = render 'form'
 
-= link_to 'Show', @training
+= link_to t('common.show'), @training
 \|
-= link_to 'Back', trainings_path
+= link_to t('common.back'), trainings_path
